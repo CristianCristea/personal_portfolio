@@ -3,7 +3,7 @@
 // ================================================================
 
 .is-displayed-mobile {
-  @include media_query(small) {
+  @include media(small) {
     display: block;
     @at-root (with: media) {
       .is-hidden-mobile {
@@ -11,7 +11,7 @@
       }
     }
   }
-  @include media_query(medium) { 
+  @include media(medium) { 
     display: none;
   } 
 }

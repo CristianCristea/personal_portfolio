@@ -3,7 +3,7 @@
 // ================================================================
 
 .is-collapsed-mobile {
-  @include media_query(small) {
+  @include media(small) {
     visibility: collapse;
     padding: 0;
     height: 0;
