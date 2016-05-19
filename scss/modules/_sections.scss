@@ -56,9 +56,10 @@
 
     h3 {
       @extend %headline-secondary;
-      font-size: em(20px);
-      font-weight: 600;
-      margin-top: em(10px);
+      font-size: em(18px);
+      font-weight: $font-weight--medium;
+      margin-top: em(5px);
+      color: palette(gray, xx-dark);
     }
   }
 }
@@ -70,7 +71,30 @@
 .project-single {
   padding-top: em(60px, 16px);
   padding-bottom: em(60px, 16px);
-
-
 }
 
+
+/***********************************************************
+*** Single project - interactive video player
+***********************************************************/
+.project-photo {
+  border: 40px solid palette(grey);
+  margin-bottom: em(100px, 24px);
+}
+
+
+.headline-project--video-player {
+  @include add-background-color($fire_bush);
+}
+
+.headline-project {
+  @extend %headline-project;
+}
+
+/***********************************************************
+*** Single project - dashboard
+***********************************************************/
+
+.headline-project--dashboard {
+  @include add-background-color($ship_cove );
+}

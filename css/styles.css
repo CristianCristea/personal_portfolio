@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-.headline-primary, .headline-project-single {
+.headline-primary {
   color: #252525;
   font-weight: 400;
   font-size: 2.625em;
@@ -11,6 +10,13 @@
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 1.5em; }
+
+.headline-project, .headline-project--subtitle {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0; }
 
 .headline-small {
   color: #ccc;
@@ -57,6 +63,9 @@
   float: none;
   margin-left: auto;
   margin-right: auto; }
+
+.no-border {
+  border: none !important; }
 
 html {
   font-family: sans-serif;
@@ -257,7 +266,10 @@ img {
   height: auto !important; }
 
 body {
-  font-family: "Lato, sans-serif"; }
+  font-family: "Roboto", sans-serif; }
+
+.headline-project--subtitle {
+  margin-top: 5em; }
 
 p {
   color: #707070;
@@ -270,13 +282,20 @@ p {
   font-weight: 400;
   color: #707070; }
 
-.headline-project-single {
-  font-size: 1em;
-  text-align: left;
-  color: white;
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;
-  background-color: #52bab3; }
+/***********************************************************
+*** General
+***********************************************************/
+i.color-video-player {
+  color: #e59440; }
+
+i.color-dashboard {
+  color: #7377bf; }
+
+.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard {
+  border: 10px solid #52bab3;
+  border-radius: 20px; }
+  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img {
+    border-radius: 20px; }
 
 /***********************************************************
 *** Project page - block project details
@@ -285,6 +304,37 @@ p {
   margin-bottom: 3.125em; }
   .project-details__item p {
     margin-bottom: 0; }
+
+/***********************************************************
+*** Project page - block project module
+***********************************************************/
+.project-module--img-video {
+  border-color: #e59440; }
+
+.project-module--double-img {
+  border-color: #e59440; }
+  .project-module--double-img img:first-of-type {
+    border-radius: 10px 10px 0 0; }
+  .project-module--double-img img:last-of-type {
+    margin-bottom: -4px;
+    border-radius: 0 0 10px 10px; }
+
+.project-module--double-img.col-6 {
+  padding: 0; }
+
+.project-requirements__item {
+  position: relative; }
+  .project-requirements__item i {
+    position: absolute;
+    top: 6px; }
+  .project-requirements__item p {
+    padding-left: 20px; }
+
+/***********************************************************
+*** Project page - dashboard
+***********************************************************/
+.project-module--img-dashboard {
+  border-color: #7377bf; }
 
 /***********************************************************
 *** Front page - Section intro
@@ -323,9 +373,10 @@ p {
   .projects__item {
     margin-bottom: 1.25em; }
     .projects__item h3 {
-      font-size: 1.25em;
-      font-weight: 600;
-      margin-top: 0.625em; }
+      font-size: 1.125em;
+      font-weight: 500;
+      margin-top: 0.3125em;
+      color: #575757; }
 
 /***********************************************************
 *** Projects page - section project-single
@@ -333,6 +384,26 @@ p {
 .project-single {
   padding-top: 3.75em;
   padding-bottom: 3.75em; }
+
+/***********************************************************
+*** Single project - interactive video player
+***********************************************************/
+.project-photo {
+  border: 40px solid #ccc;
+  margin-bottom: 4.16667em; }
+
+.headline-project--video-player {
+  text-align: left;
+  color: #fff;
+  background-color: #e59440; }
+
+/***********************************************************
+*** Single project - dashboard
+***********************************************************/
+.headline-project--dashboard {
+  text-align: left;
+  color: #fff;
+  background-color: #7377bf; }
 
 /***********************************************************
 *** Btn

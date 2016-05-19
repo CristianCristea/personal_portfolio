@@ -17,6 +17,11 @@ body {
  @extend %headline-small;
 }
 
+.headline-project--subtitle {
+  @extend .headline-project;
+  margin-top: em(80px);
+}
+
 p {
   color: palette(gray, x-dark);
   line-height: 1.6;
@@ -29,19 +34,3 @@ p {
   font-weight: $font-weight--normal;
   color: palette(grey, x-dark);
 }
-
-.headline-project-single {
-  @include headline-primary--bg-color($primary-color);
-}
-// .headline-primary--banner {
-//   @extend %headline-primary;
-//   text-align: left;
-//   color: white;
-
-//   padding-top: em(20px);
-//   padding-bottom: em(20px);
-// }
-
-// .background--color {
-//     background-color: $primary-color;
-// }

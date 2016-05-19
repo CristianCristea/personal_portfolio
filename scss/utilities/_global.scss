@@ -18,6 +18,10 @@ $coral                : #ff784f;
 $purple-majesty       : #9279c3;
 $scooter              : #39add1;
 
+//projects
+$fire_bush            : #e59440;
+$ship_cove            : #7377bf;
+
 
 $primary-color        : $fountain-blue;
 $secondary-color      : $scooter;
@@ -28,12 +32,13 @@ $color-shadow         : rgba($black, .2);
 
 $color-palettes: (
   grey: (
-    xx-light : lighten($grey, 43%),
     x-light  : lighten($grey, 35%),
     light    : lighten($grey, 10%),
     base     : $grey,
     dark     : darken($grey, 28%),
-    x-dark   : darken($grey, 36%)
+    x-dark   : darken($grey, 36%),
+    xx-dark   : darken($grey, 46%),
+    xxx-dark   : darken($grey, 66%)
   ),
   black: (
     light    : lighten($black, 10%),
@@ -60,10 +65,10 @@ $letter-space     : 1px;
 
 // Font Stacks
 
-$google-fonts-url        : 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+// $google-fonts-url        : 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
 
-$font-family-primary: "Lato, sans-serif";
-$font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-primary: 'Roboto', sans-serif;
+// $font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Font Weights
 // ============
@@ -71,6 +76,7 @@ $font-family-secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-weight--thin     : 100;
 $font-weight--light    : 300;
 $font-weight--normal   : 400;
+$font-weight--medium   : 500;
 $font-weight--semibold : 700;
 $font-weight--bold     : 900;
 
