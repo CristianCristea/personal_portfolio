@@ -2,3 +2,13 @@
 body {
   font-family: $font-family-primary;
 }
+
+.headline-primary {
+  @extend %center-align;
+  @extend %headline-primary;
+}
+
+.headline-secondary {
+  @extend %center-align;
+  @extend %headline-secondary;
+}

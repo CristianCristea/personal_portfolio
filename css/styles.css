@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+.headline-primary {
+  color: #525559;
+  font-weight: 300;
+  font-size: 2.625em;
+  line-height: 1.09524;
+  margin-top: 0; }
+
+.headline-secondary, .location h3 {
+  color: #999da1;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .container:after {
   content: "";
   display: table;
@@ -13,6 +27,9 @@
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.headline-primary, .headline-secondary, .location {
+  text-align: center; }
 
 .centered, .container {
   float: none;
@@ -213,8 +230,30 @@ ul {
 a {
   text-decoration: none; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 body {
   font-family: "Lato, sans-serif"; }
+
+/***********************************************************
+*** Section intro
+***********************************************************/
+.headline-group .headline-primary {
+  margin-bottom: 0; }
+.headline-group .headline-secondary {
+  margin-top: 0; }
+
+.location i {
+  padding-right: 0.1875em;
+  color: #52bab3;
+  font-size: 1.25em; }
+.location h3 {
+  font-size: 1.25em;
+  display: inline-block;
+  color: #52bab3;
+  margin-top: 0; }
 
 /***********************************************************
 ***
@@ -294,9 +333,18 @@ body {
 /***********************************************************
 *** Contact nav
 ***********************************************************/
-/*********************************************
-***** Header
-*********************************************/
+.contact-nav {
+  text-align: center;
+  margin: 1.875em; }
+  .contact-nav__link {
+    display: inline-block;
+    padding-left: 0.625em; }
+    .contact-nav__link i {
+      color: #999da1;
+      font-size: 1.5em; }
+      .contact-nav__link i:hover {
+        color: #52bab3; }
+
 /***********************************************************
 *** Sidebar
 ***********************************************************/

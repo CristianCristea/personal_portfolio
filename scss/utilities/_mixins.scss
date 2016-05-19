@@ -4,12 +4,12 @@
 
 // BEM selectors
 
-@mixin e($element) {
+@mixin element($element) {
   &__#{$element} {
     @content;
   }
 }
-@mixin m($modifier) {
+@mixin modifier($modifier) {
   &--#{$modifier} {
     @content;
   }
@@ -41,34 +41,6 @@
 //=============================================================
 // Placeholders
 //=============================================================
-
-// Nav Items
-
-// %contact-nav-item-horz {
-//   @include media(medium) {
-//     display: inline-block;
-//     margin: 0 em(10px);
-//   }
-// }
-
-// %nav-item-link {
-//   font-weight: $font-weight--light;
-//   text-align: center;
-//   font-size: em(18px);
-//   display: block;
-//   padding: em(8px, 20px);
-//   border-bottom: 1px solid transparent;
-//   @include media(small) {
-//     border-bottom-color: palette(grey, xx-light);
-//     padding-top: em(14px, 18px);
-//     padding-bottom: em(14px, 18px);
-//   }
-// }
-
-// %nav-item-active {
-//   color: palette(black);
-//   border-color: $color-primary;
-// }
 
 // Headlines
 
@@ -108,14 +80,3 @@
 //   }
 // }
 
-// Menu link
-
-// %contact-nav-link {
-//   display: block;
-//   padding-top: em(16px);
-//   padding-bottom: em(16px);
-//   color: $white;
-//   text-align: center;
-//   text-shadow: 0 1px $color-shadow;
-//   font-size: em(18px);
-// }

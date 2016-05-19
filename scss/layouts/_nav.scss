@@ -2,4 +2,21 @@
 *** Contact nav
 ***********************************************************/
 
+.contact-nav {
+  text-align: center;
+  margin: em(30px);
 
+  @include element(link) {
+    display: inline-block;
+    padding-left: em(10px);
+      
+    i {
+      color: palette(gray, light);
+      font-size: em(24px);
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
