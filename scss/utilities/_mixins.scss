@@ -38,6 +38,17 @@
   }
 }
 
+@mixin headline-primary--bg-color($bg-color) {
+  @extend %headline-primary;
+  font-size: em(16px, 16px);
+  text-align: left;
+  color: white;
+
+  padding-top: em(20px);
+  padding-bottom: em(20px);
+  background-color: $bg-color;
+}
+
 //=============================================================
 // Placeholders
 //=============================================================
@@ -68,13 +79,23 @@
   text-transform: uppercase;
 }
 
-@mixin headline-primary--bg-color($bg-color) {
-  @extend %headline-primary;
-  font-size: em(16px, 16px);
-  text-align: left;
-  color: white;
+// Buttons
 
-  padding-top: em(20px);
-  padding-bottom: em(20px);
-  background-color: $bg-color;
+%btn {
+  width: em(320px);
+  padding: 15px 30px;
+  border: 0;
+  border-radius : .4em;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--normal;
+  transition: opacity .3s;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
 }

@@ -19,6 +19,22 @@
   font-size: 1em;
   text-transform: uppercase; }
 
+.btn-primary {
+  width: 20em;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: .4em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 400;
+  transition: opacity .3s;
+  display: block; }
+  .btn-primary:hover {
+    opacity: .75; }
+  .btn-primary:active {
+    opacity: initial; }
+
 .container:after {
   content: "";
   display: table;
@@ -34,7 +50,7 @@
   position: absolute;
   width: 1px; }
 
-.headline-primary, .headline-secondary, .location, footer {
+.headline-primary, .headline-secondary, .location, .btn-primary, footer {
   text-align: center; }
 
 .centered, .container {
@@ -271,7 +287,7 @@ p {
     margin-bottom: 0; }
 
 /***********************************************************
-*** Section intro
+*** Front page - Section intro
 ***********************************************************/
 .intro {
   margin-bottom: 1.875em; }
@@ -319,8 +335,13 @@ p {
   padding-bottom: 3.75em; }
 
 /***********************************************************
-***
+*** Btn
 ***********************************************************/
+.btn-primary {
+  background-color: #52bab3; }
+  .btn-primary:after {
+    background-color: #6fc6c0; }
+
 * {
   box-sizing: border-box; }
 
