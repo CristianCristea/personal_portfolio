@@ -1,19 +1,27 @@
 /***********************************************************
 *** Section intro
 ***********************************************************/
+.intro {
+  margin-bottom: em(30px);
+  max-width: 1100px;
+}
 
 .headline-group {
   .headline-primary {
-    margin-bottom: 0;
+    margin-bottom: em(10px);
+    margin-top: em(40px);
   }
 
   .headline-secondary {
-    margin-top: 0; 
+    margin-top: 0;
+    margin-bottom: 0; 
   }
 }
 
 .location {
-  @extend %center-align; 
+  @extend %center-align;
+  margin-bottom: em(80px);
+
   i {
     padding-right: em(3px);
     color: $primary-color;
@@ -25,7 +33,25 @@
     font-size: em(30px, 24px);
     display: inline-block;
     color: $primary-color;
-    margin-top: 0;
+    margin-top: em(4px);
   }
 }
 
+/***********************************************************
+*** Section proiects
+***********************************************************/
+
+.projects {
+  margin-top: em(30px);
+
+  @include element(item) {
+    margin-bottom: em(20px);
+
+    h3 {
+      @extend %headline-secondary;
+      font-size: em(20px);
+      font-weight: 600;
+      margin-top: em(10px);
+    }
+  }
+}

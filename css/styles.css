@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 .headline-primary {
-  color: #525559;
-  font-weight: 300;
+  color: #252525;
+  font-weight: 400;
   font-size: 2.625em;
   line-height: 1.09524;
   margin-top: 0; }
 
-.headline-secondary, .location h3 {
-  color: #999da1;
+.headline-secondary, .location h3, .projects__item h3 {
+  color: #656a6e;
   letter-spacing: 1px;
-  font-weight: 100;
-  font-size: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-weight: 400;
+  font-size: 1.5em; }
 
 .container:after {
   content: "";
@@ -231,8 +230,8 @@ a {
   text-decoration: none; }
 
 img {
-  width: 100%;
-  height: auto; }
+  width: 100% !important;
+  height: auto !important; }
 
 body {
   font-family: "Lato, sans-serif"; }
@@ -240,36 +239,46 @@ body {
 /***********************************************************
 *** Section intro
 ***********************************************************/
-.headline-group .headline-primary {
-  margin-bottom: 0; }
-.headline-group .headline-secondary {
-  margin-top: 0; }
+.intro {
+  margin-bottom: 1.875em;
+  max-width: 1100px; }
 
-.location i {
-  padding-right: 0.1875em;
-  color: #52bab3;
-  font-size: 1.25em; }
-.location h3 {
-  font-size: 1.25em;
-  display: inline-block;
-  color: #52bab3;
-  margin-top: 0; }
+.headline-group .headline-primary {
+  margin-bottom: 0.625em;
+  margin-top: 2.5em; }
+.headline-group .headline-secondary {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.location {
+  margin-bottom: 5em; }
+  .location i {
+    padding-right: 0.1875em;
+    color: #52bab3;
+    font-size: 1.25em; }
+  .location h3 {
+    font-size: 1.25em;
+    display: inline-block;
+    color: #52bab3;
+    margin-top: 0.25em; }
+
+/***********************************************************
+*** Section proiects
+***********************************************************/
+.projects {
+  margin-top: 1.875em; }
+  .projects__item {
+    margin-bottom: 1.25em; }
+    .projects__item h3 {
+      font-size: 1.25em;
+      font-weight: 600;
+      margin-top: 0.625em; }
 
 /***********************************************************
 ***
 ***********************************************************/
 * {
   box-sizing: border-box; }
-
-.centered, .container {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
-
-.container:after {
-  content: "";
-  display: table;
-  clear: both; }
 
 @media (min-width: 769px) {
   .col-1 {
@@ -308,22 +317,23 @@ body {
   .col-12 {
     width: 100%; } }
 @media (min-width: 1px) and (max-width: 768px) {
-  [class^="col-"] {
+  [class*="col-"] {
     margin-top: 0.75em;
     margin-bottom: 0.75em; } }
 @media (min-width: 769px) {
-  [class^="col-"] {
+  [class*="col-"] {
     float: left;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px; }
-    [class^="col-"] + [class^="col-"] {
+    [class*="col-"] + [class*="col-"] {
       margin-left: 2%; }
-    [class^="col-"]:last-of-type {
+    [class*="col-"]:last-of-type {
       float: right; } }
 
 .container {
-  width: 90%; }
+  width: 90%;
+  max-width: 1100px; }
   [class*="col-"] > .container {
     width: 100%; }
   @media (min-with: 1100px) {
