@@ -247,6 +247,10 @@ body {
 .intro {
   margin-bottom: 1.875em;
   max-width: 1100px; }
+  .intro a {
+    color: #252525; }
+    .intro a:hover {
+      color: #52bab3; }
 
 .headline-group .headline-primary {
   margin-bottom: 0.625em;

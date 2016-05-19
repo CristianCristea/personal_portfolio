@@ -4,7 +4,17 @@
 .intro {
   margin-bottom: em(30px);
   max-width: 1100px;
+
+  a {
+    color: palette(black, light); 
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
+
+
 
 .headline-group {
   .headline-primary {
