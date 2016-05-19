@@ -490,6 +490,11 @@ i.color-dashboard {
       font-size: 1.5em; }
       .contact-nav__link i:hover {
         color: #52bab3; }
+    .contact-nav__link svg#Layer_1 {
+      fill: #e6e6e6;
+      margin-bottom: -5px; }
+      .contact-nav__link svg#Layer_1:hover {
+        fill: #52bab3; }
 
 /***********************************************************
 *** Sidebar

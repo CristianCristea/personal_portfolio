@@ -11,11 +11,20 @@
     padding-left: em(10px);
       
     i {
-      color: palette(gray, light);
+      color: palette(grey, light);
       font-size: em(24px);
 
       &:hover {
         color: $primary-color;
+      }
+    }
+
+    svg#Layer_1 {
+      fill: palette(grey, light);
+      margin-bottom: -5px;
+
+      &:hover {
+        fill: $primary-color;
       }
     }
   }
