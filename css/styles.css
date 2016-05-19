@@ -27,7 +27,7 @@
   position: absolute;
   width: 1px; }
 
-.headline-primary, .headline-secondary, .location {
+.headline-primary, .headline-secondary, .location, footer {
   text-align: center; }
 
 .centered, .container {
@@ -236,6 +236,11 @@ img {
 body {
   font-family: "Lato, sans-serif"; }
 
+.text-small {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #525559; }
+
 /***********************************************************
 *** Section intro
 ***********************************************************/
@@ -319,7 +324,7 @@ body {
 @media (min-width: 1px) and (max-width: 768px) {
   [class*="col-"] {
     margin-top: 0.75em;
-    margin-bottom: 0.75em; } }
+    margin-bottom: 3.75em; } }
 @media (min-width: 769px) {
   [class*="col-"] {
     float: left;
@@ -361,6 +366,10 @@ body {
 /*********************************************
 ***** Footer
 *********************************************/
+footer .text-small {
+  margin-top: 3.57143em;
+  margin-bottom: 3.57143em; }
+
 /***********************************************************
 *** Print
 ***********************************************************/

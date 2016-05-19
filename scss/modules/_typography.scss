@@ -12,3 +12,9 @@ body {
   @extend %center-align;
   @extend %headline-secondary;
 }
+
+.text-small {
+  font-size: em(14px);
+  font-weight: $font-weight--normal;
+  color: palette(grey, x-dark);
+}
