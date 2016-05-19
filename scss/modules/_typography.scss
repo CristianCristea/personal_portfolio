@@ -13,8 +13,35 @@ body {
   @extend %headline-secondary;
 }
 
+.headline-small {
+ @extend %headline-small;
+}
+
+p {
+  color: palette(gray, x-dark);
+  line-height: 1.6;
+  font-weight: $font-weight--normal;
+  font-size: em(16px);
+}
+
 .text-small {
   font-size: em(14px);
   font-weight: $font-weight--normal;
   color: palette(grey, x-dark);
 }
+
+.headline-project-single {
+  @include headline-primary--bg-color($primary-color);
+}
+// .headline-primary--banner {
+//   @extend %headline-primary;
+//   text-align: left;
+//   color: white;
+
+//   padding-top: em(20px);
+//   padding-bottom: em(20px);
+// }
+
+// .background--color {
+//     background-color: $primary-color;
+// }

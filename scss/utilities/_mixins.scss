@@ -59,3 +59,22 @@
   font-size: em(24px);
   // font-family: $font-family-secondary;
 }
+
+%headline-small {
+  color: palette(gray);
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--normal;
+  font-size: em(16px);
+  text-transform: uppercase;
+}
+
+@mixin headline-primary--bg-color($bg-color) {
+  @extend %headline-primary;
+  font-size: em(16px, 16px);
+  text-align: left;
+  color: white;
+
+  padding-top: em(20px);
+  padding-bottom: em(20px);
+  background-color: $bg-color;
+}

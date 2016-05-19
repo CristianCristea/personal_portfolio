@@ -5,7 +5,7 @@
 footer {
   @extend %center-align;
 
-  .text-small {
+  p {
     margin-top: em(50px, 14px);
     margin-bottom: em(50px, 14px);
   }

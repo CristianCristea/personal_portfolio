@@ -7,7 +7,7 @@
 // Descriptive colors:
 $white : #fff;
 $black : #0b0b0b;
-$grey  : #797e83;
+$grey  : #ccc;
 
 $de_york              : #81c98f;
 $glacier              : #74b1bf;
@@ -30,10 +30,10 @@ $color-palettes: (
   grey: (
     xx-light : lighten($grey, 43%),
     x-light  : lighten($grey, 35%),
-    light    : lighten($grey, 12%),
+    light    : lighten($grey, 10%),
     base     : $grey,
-    dark     : darken($grey, 8%),
-    x-dark   : darken($grey, 16%)
+    dark     : darken($grey, 28%),
+    x-dark   : darken($grey, 36%)
   ),
   black: (
     light    : lighten($black, 10%),

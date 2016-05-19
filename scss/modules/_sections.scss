@@ -3,7 +3,6 @@
 ***********************************************************/
 .intro {
   margin-bottom: em(30px);
-  max-width: 1100px;
 
   a {
     color: palette(black, light); 
@@ -48,7 +47,7 @@
 }
 
 /***********************************************************
-*** Section proiects
+*** Front page - Section proiects
 ***********************************************************/
 
 .projects {
@@ -64,4 +63,13 @@
       margin-top: em(10px);
     }
   }
+}
+
+/***********************************************************
+*** Projects page - section project-single
+***********************************************************/
+
+.project-single {
+  padding-top: em(60px, 16px);
+  padding-bottom: em(60px, 16px);
 }

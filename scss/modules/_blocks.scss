@@ -1,1 +1,13 @@
+/***********************************************************
+*** Project page - block project details
+***********************************************************/
 
+.project-details {
+  @include element(item) {
+  margin-bottom: em(50px);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
