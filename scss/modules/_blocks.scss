@@ -14,6 +14,10 @@ i.color-registration {
   color: $fountain-blue;
 }
 
+i.color-weather {
+  color: $matisse;
+}
+
 .project-module--img{
   border: 10px solid $primary-color;
   border-radius: 20px;
@@ -98,4 +102,13 @@ i.color-registration {
 .project-module--img-registration {
   @extend .project-module--img;
   border-color: $fountain-blue;
+}
+
+/***********************************************************
+*** Project page - weather app
+***********************************************************/
+
+.project-module--img-weather {
+  @extend .project-module--img;
+  border-color: $matisse;
 }

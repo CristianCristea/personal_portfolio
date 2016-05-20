@@ -106,3 +106,11 @@
 .headline-project--registration {
   @include add-background-color($fountain-blue);
 }
+
+/***********************************************************
+*** Single project - weather app
+***********************************************************/
+
+.headline-project--weather {
+  @include add-background-color($matisse);
+}

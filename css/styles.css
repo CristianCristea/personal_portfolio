@@ -294,10 +294,13 @@ i.color-dashboard {
 i.color-registration {
   color: #52bab3; }
 
-.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration {
+i.color-weather {
+  color: #2472aa; }
+
+.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather {
   border: 10px solid #52bab3;
   border-radius: 20px; }
-  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img {
+  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img {
     border-radius: 20px; }
 
 /***********************************************************
@@ -344,6 +347,12 @@ i.color-registration {
 ***********************************************************/
 .project-module--img-registration {
   border-color: #52bab3; }
+
+/***********************************************************
+*** Project page - weather app
+***********************************************************/
+.project-module--img-weather {
+  border-color: #2472aa; }
 
 /***********************************************************
 *** Front page - Section intro
@@ -421,6 +430,14 @@ i.color-registration {
   text-align: left;
   color: #fff;
   background-color: #52bab3; }
+
+/***********************************************************
+*** Single project - weather app
+***********************************************************/
+.headline-project--weather {
+  text-align: left;
+  color: #fff;
+  background-color: #2472aa; }
 
 /***********************************************************
 *** Btn
