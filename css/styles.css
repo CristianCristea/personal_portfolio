@@ -300,10 +300,13 @@ i.color-weather {
 i.color-photo-gallery {
   color: #5ece7f; }
 
-.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather, .project-module--img--photo-galley {
+i.color-notify {
+  color: #2ECC71; }
+
+.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather, .project-module--img--photo-galley, .project-module--img--notify {
   border: 10px solid #52bab3;
   border-radius: 20px; }
-  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img, .project-module--img--photo-galley img {
+  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img, .project-module--img--photo-galley img, .project-module--img--notify img {
     border-radius: 20px; }
 
 /***********************************************************
@@ -362,6 +365,18 @@ i.color-photo-gallery {
 ***********************************************************/
 .project-module--img--photo-galley {
   border-color: #5ece7f; }
+
+/***********************************************************
+*** Project page - notify
+***********************************************************/
+.project-module--img--notify {
+  border-color: #2ECC71; }
+  .project-module--img--notify img {
+    border-radius: 11px;
+    margin-bottom: -4px; }
+
+.project-module--img--notify.col-12 {
+  padding: 0 !important; }
 
 /***********************************************************
 *** Front page - Section intro
@@ -457,6 +472,14 @@ i.color-photo-gallery {
   text-align: left;
   color: #fff;
   background-color: #5ece7f; }
+
+/***********************************************************
+*** Single project - notify
+***********************************************************/
+.headline-project--notify {
+  text-align: left;
+  color: #fff;
+  background-color: #2ECC71; }
 
 /***********************************************************
 *** Btn

@@ -126,3 +126,11 @@
 .headline-project--photo-gallery {
   @include add-background-color($emerald);
 }
+
+/***********************************************************
+*** Single project - notify
+***********************************************************/
+
+.headline-project--notify {
+  @include add-background-color($shamrock);
+}

@@ -22,6 +22,10 @@ i.color-photo-gallery {
   color: $emerald;
 }
 
+i.color-notify {
+  color: $shamrock;
+}
+
 .project-module--img{
   border: 10px solid $primary-color;
   border-radius: 20px;
@@ -124,4 +128,22 @@ i.color-photo-gallery {
 .project-module--img--photo-galley {
   @extend .project-module--img;
     border-color: $emerald;
+}
+
+/***********************************************************
+*** Project page - notify
+***********************************************************/
+
+.project-module--img--notify {
+  @extend .project-module--img;
+    border-color: $shamrock;
+  
+  img {
+    border-radius: 11px;
+    margin-bottom: -4px;
+  }
+}
+
+.project-module--img--notify.col-12 {
+  padding: 0 !important;
 }
