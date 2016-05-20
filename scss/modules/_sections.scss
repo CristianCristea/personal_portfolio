@@ -98,3 +98,11 @@
 .headline-project--dashboard {
   @include add-background-color($ship_cove );
 }
+
+/***********************************************************
+*** Single project - online registration
+***********************************************************/
+
+.headline-project--registration {
+  @include add-background-color($fountain-blue);
+}

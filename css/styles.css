@@ -291,10 +291,13 @@ i.color-video-player {
 i.color-dashboard {
   color: #7377bf; }
 
-.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard {
+i.color-registration {
+  color: #52bab3; }
+
+.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration {
   border: 10px solid #52bab3;
   border-radius: 20px; }
-  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img {
+  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img {
     border-radius: 20px; }
 
 /***********************************************************
@@ -335,6 +338,12 @@ i.color-dashboard {
 ***********************************************************/
 .project-module--img-dashboard {
   border-color: #7377bf; }
+
+/***********************************************************
+*** Project page - online registration
+***********************************************************/
+.project-module--img-registration {
+  border-color: #52bab3; }
 
 /***********************************************************
 *** Front page - Section intro
@@ -404,6 +413,14 @@ i.color-dashboard {
   text-align: left;
   color: #fff;
   background-color: #7377bf; }
+
+/***********************************************************
+*** Single project - online registration
+***********************************************************/
+.headline-project--registration {
+  text-align: left;
+  color: #fff;
+  background-color: #52bab3; }
 
 /***********************************************************
 *** Btn

@@ -10,6 +10,10 @@ i.color-dashboard {
   color: $ship_cove;
 }
 
+i.color-registration {
+  color: $fountain-blue;
+}
+
 .project-module--img{
   border: 10px solid $primary-color;
   border-radius: 20px;
@@ -85,4 +89,13 @@ i.color-dashboard {
 .project-module--img-dashboard {
   @extend .project-module--img;
   border-color: $ship_cove;
+}
+
+/***********************************************************
+*** Project page - online registration
+***********************************************************/
+
+.project-module--img-registration {
+  @extend .project-module--img;
+  border-color: $fountain-blue;
 }
