@@ -18,6 +18,10 @@ i.color-weather {
   color: $matisse;
 }
 
+i.color-photo-gallery {
+  color: $emerald;
+}
+
 .project-module--img{
   border: 10px solid $primary-color;
   border-radius: 20px;
@@ -111,4 +115,13 @@ i.color-weather {
 .project-module--img-weather {
   @extend .project-module--img;
   border-color: $matisse;
+}
+
+/***********************************************************
+*** Project page - interactive photo gallery
+***********************************************************/
+
+.project-module--img--photo-galley {
+  @extend .project-module--img;
+    border-color: $emerald;
 }

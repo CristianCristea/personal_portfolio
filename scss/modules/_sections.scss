@@ -80,6 +80,10 @@
 .project-photo {
   border: 40px solid palette(grey);
   margin-bottom: em(100px, 24px);
+
+  img {
+    margin-bottom: -4px;
+  }
 }
 
 
@@ -113,4 +117,12 @@
 
 .headline-project--weather {
   @include add-background-color($matisse);
+}
+
+/***********************************************************
+*** Single project - interactive photo gallery
+***********************************************************/
+
+.headline-project--photo-gallery {
+  @include add-background-color($emerald);
 }

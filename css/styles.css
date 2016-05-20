@@ -297,10 +297,13 @@ i.color-registration {
 i.color-weather {
   color: #2472aa; }
 
-.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather {
+i.color-photo-gallery {
+  color: #5ece7f; }
+
+.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather, .project-module--img--photo-galley {
   border: 10px solid #52bab3;
   border-radius: 20px; }
-  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img {
+  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img, .project-module--img--photo-galley img {
     border-radius: 20px; }
 
 /***********************************************************
@@ -353,6 +356,12 @@ i.color-weather {
 ***********************************************************/
 .project-module--img-weather {
   border-color: #2472aa; }
+
+/***********************************************************
+*** Project page - interactive photo gallery
+***********************************************************/
+.project-module--img--photo-galley {
+  border-color: #5ece7f; }
 
 /***********************************************************
 *** Front page - Section intro
@@ -409,6 +418,8 @@ i.color-weather {
 .project-photo {
   border: 40px solid #ccc;
   margin-bottom: 4.16667em; }
+  .project-photo img {
+    margin-bottom: -4px; }
 
 .headline-project--video-player {
   text-align: left;
@@ -438,6 +449,14 @@ i.color-weather {
   text-align: left;
   color: #fff;
   background-color: #2472aa; }
+
+/***********************************************************
+*** Single project - interactive photo gallery
+***********************************************************/
+.headline-project--photo-gallery {
+  text-align: left;
+  color: #fff;
+  background-color: #5ece7f; }
 
 /***********************************************************
 *** Btn
