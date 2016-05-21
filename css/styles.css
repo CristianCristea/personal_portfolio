@@ -306,10 +306,10 @@ i.color-photo-gallery {
 i.color-notify {
   color: #2ECC71; }
 
-.project-module--img, .project-module--img-video, .project-module--double-img, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather, .project-module--img--photo-galley, .project-module--img--notify {
+.project-module--img, .project-module--img-video, .project-module--img-dashboard, .project-module--img-registration, .project-module--img-weather, .project-module--img--photo-galley, .project-module--img--notify {
   border: 10px solid #52bab3;
   border-radius: 20px; }
-  .project-module--img img, .project-module--img-video img, .project-module--double-img img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img, .project-module--img--photo-galley img, .project-module--img--notify img {
+  .project-module--img img, .project-module--img-video img, .project-module--img-dashboard img, .project-module--img-registration img, .project-module--img-weather img, .project-module--img--photo-galley img, .project-module--img--notify img {
     border-radius: 20px; }
 
 /***********************************************************
@@ -325,17 +325,6 @@ i.color-notify {
 ***********************************************************/
 .project-module--img-video {
   border-color: #e59440; }
-
-.project-module--double-img {
-  border-color: #e59440; }
-  .project-module--double-img img:first-of-type {
-    border-radius: 10px 10px 0 0; }
-  .project-module--double-img img:last-of-type {
-    margin-bottom: -4px;
-    border-radius: 0 0 10px 10px; }
-
-.project-module--double-img.col-6 {
-  padding: 0; }
 
 .project-requirements__item {
   position: relative; }

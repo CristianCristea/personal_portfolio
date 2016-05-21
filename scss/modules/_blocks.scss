@@ -60,24 +60,6 @@ i.color-notify {
   border-color: $fire_bush;
 }
 
-.project-module--double-img {
- @extend .project-module--img;
-  border-color: $fire_bush;
-
- & img:first-of-type {
-  border-radius: 10px 10px 0 0;
- }
-
-  & img:last-of-type {
-    margin-bottom: -4px;
-    border-radius: 0 0 10px 10px;
-  }
-}
-
-.project-module--double-img.col-6 {
-  padding: 0;
-}
-
 // requirments
 .project-requirements {
   @include element(item) {
