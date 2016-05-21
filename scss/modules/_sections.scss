@@ -69,8 +69,11 @@
 ***********************************************************/
 
 .project-single {
-  padding-top: em(60px, 16px);
-  padding-bottom: em(60px, 16px);
+
+  @include media(medium) {
+    padding-top: em(60px, 16px);
+    padding-bottom: em(60px, 16px);
+  }
 }
 
 

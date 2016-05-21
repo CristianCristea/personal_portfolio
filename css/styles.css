@@ -67,6 +67,9 @@
 .no-border {
   border: none !important; }
 
+.border-bottom {
+  border-bottom: 1px solid #0b0b0b; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -423,9 +426,10 @@ i.color-notify {
 /***********************************************************
 *** Projects page - section project-single
 ***********************************************************/
-.project-single {
-  padding-top: 3.75em;
-  padding-bottom: 3.75em; }
+@media (min-width: 769px) {
+  .project-single {
+    padding-top: 3.75em;
+    padding-bottom: 3.75em; } }
 
 /***********************************************************
 *** Single project - interactive video player
