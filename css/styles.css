@@ -388,7 +388,7 @@ i.color-notify {
   margin-bottom: 0; }
 
 .location {
-  margin-bottom: 5em; }
+  margin-bottom: 0; }
   .location i {
     padding-right: 0.1875em;
     color: #52bab3;
@@ -398,6 +398,9 @@ i.color-notify {
     display: inline-block;
     color: #52bab3;
     margin-top: 0.25em; }
+  @media (min-width: 1025px) {
+    .location {
+      margin-bottom: 5em; } }
 
 /***********************************************************
 *** Front page - Section proiects

@@ -27,7 +27,7 @@
 
 .location {
   @extend %center-align;
-  margin-bottom: em(80px);
+  margin-bottom: 0;
 
   i {
     padding-right: em(3px);
@@ -41,6 +41,10 @@
     display: inline-block;
     color: $primary-color;
     margin-top: em(4px);
+  }
+
+  @include media(medium-large) {
+    margin-bottom: em(80px);
   }
 }
 
