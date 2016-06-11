@@ -3,6 +3,7 @@
 ***********************************************************/
 
 .contact-nav {
+  position: relative;
   text-align: center;
   margin: em(30px);
 
@@ -26,6 +27,10 @@
       &:hover {
         fill: $primary-color;
       }
+    }
+    &:last-of-type {
+      position: absolute;
+      top: -1px;
     }
   }
 }

@@ -552,6 +552,7 @@ i.color-notify {
 *** Contact nav
 ***********************************************************/
 .contact-nav {
+  position: relative;
   text-align: center;
   margin: 1.875em; }
   .contact-nav__link {
@@ -567,6 +568,9 @@ i.color-notify {
       margin-bottom: -5px; }
       .contact-nav__link svg#Layer_1:hover {
         fill: #52bab3; }
+    .contact-nav__link:last-of-type {
+      position: absolute;
+      top: -1px; }
 
 .header-img {
   display: block;
