@@ -25,14 +25,15 @@ nav {
     svg#Layer_1 {
       fill: $white;
       margin-bottom: -5px;
-
-      &:hover {
-        fill: $white;
-      }
     }
     &:last-of-type {
       position: absolute;
       top: -1px;
+    }
+
+    &:hover {
+    transform: scale(1.2) rotate(7deg);
+    transition: all .2s ease-in-out;
     }
   }
 }

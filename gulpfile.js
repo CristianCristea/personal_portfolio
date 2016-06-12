@@ -67,7 +67,7 @@ gulp.task('styles', function() {
 
 // delete dist before a new build
 gulp.task('clean', function() {
-  return del(['dist']);
+  return del(['dist', 'css/styles.min.css', 'css/styles.min.css.map', 'js/scripts.min.js', 'js/scripts.min.js.map']);
 });
 
 gulp.task('server', function(done) {
