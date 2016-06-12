@@ -2,33 +2,32 @@
 *** Contact nav
 ***********************************************************/
 nav {
-  margin-left: -50px;
+    position: fixed;
+    top: 0;
+    background: $primary-color;
+    width: 100%;
+    height:90px;
+    padding-top: em(10px);
 }
 
 .contact-nav {
   position: relative;
   text-align: center;
-  margin: em(30px);
+  margin: em(20px);
+  margin-left: -50px;
+  // padding-bottom: 10px;
+
 
   @include element(link) {
     display: inline-block;
-    padding-left: em(10px);
-      
-    i {
-      color: palette(grey, light);
-      font-size: em(24px);
-
-      &:hover {
-        color: $primary-color;
-      }
-    }
+    padding-left: em(30px);
 
     svg#Layer_1 {
-      fill: palette(grey, light);
+      fill: $white;
       margin-bottom: -5px;
 
       &:hover {
-        fill: $primary-color;
+        fill: $white;
       }
     }
     &:last-of-type {

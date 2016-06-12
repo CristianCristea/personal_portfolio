@@ -89,7 +89,7 @@ gulp.task("default",
     function watcher(done) {
       if (!isprod) {
         gulp.watch(['js/**/*.js', '!js/vendor/**/*.js'], gulp.parallel('scripts'));
-        gulp.watch('scss/**/*.sass', gulp.parallel('styles'));
+        gulp.watch('scss/**/*.scss', gulp.parallel('styles'));
         gulp.watch('./**/*', bSync.reload);
       }
       done();
