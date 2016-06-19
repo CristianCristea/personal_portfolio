@@ -81,19 +81,21 @@ gulp.task('server', function(done) {
   done();
 });
 
-// run all tasks, copy assets to dist
-gulp.task("default", 
-  gulp.series('clean',
-    gulp.parallel('styles', 'scripts'),
-    'server',
-    function watcher(done) {
+gulp.task('watcher', function watcher(done) {
       if (!isprod) {
         gulp.watch(['js/**/*.js', '!js/vendor/**/*.js'], gulp.parallel('scripts'));
         gulp.watch('scss/**/*.scss', gulp.parallel('styles'));
         gulp.watch('./**/*', bSync.reload);
       }
       done();
-    },
+    });
+
+// run all tasks, copy assets to dist
+gulp.task("default", 
+  gulp.series('clean',
+    gulp.parallel('styles', 'scripts'),
+    'server',
+    'watcher',
     function distribution() {
       if (isprod) {
         return gulp.src(["css/styles.min.css", "js/scripts.min.js", 'projects/*.html', 'index.html', "img/**"], { base: './' })
