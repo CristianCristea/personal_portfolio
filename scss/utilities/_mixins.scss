@@ -19,7 +19,7 @@
 
 @mixin media($break) {
   @if $break == "small" {
-    @media (min-width: $mobile-large) and (max-width: $tablet-large) {
+    @media (min-width: $mobile-large) {
       @content;
     }
   }

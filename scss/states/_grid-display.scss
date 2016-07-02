@@ -5,7 +5,7 @@
 .is-displayed-mobile {
   @include media(small) {
     display: block;
-    @at-root (width: media) {
+    @at-root (with: media) {
       .is-hidden-mobile {
   display: none;
       }
