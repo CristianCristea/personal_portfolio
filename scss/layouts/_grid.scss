@@ -86,7 +86,7 @@ $cont-max-w     : 1050px;
   }
 
   // set a max width for grid container
-  @media (min-with: 1100px) {
+  @media (min-width: 1100px) {
     max-width: $cont-max-w;
   }
 }
