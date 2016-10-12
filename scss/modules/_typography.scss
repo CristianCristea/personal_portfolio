@@ -34,3 +34,12 @@ p {
   font-weight: $font-weight--normal;
   color: palette(grey, x-dark);
 }
+
+.online {
+  @extend .headline-small;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
