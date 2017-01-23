@@ -1,6 +1,14 @@
-'use strict';
-
 jQuery(document).ready(function($) {
+
+function resizeProjectPhoto() {
+  var $projectPhoto = $('.project-photo');
+  if ($projectPhoto.width() > 1100) {
+    $projectPhoto.addClass('container');
+  }
+}
+
+  $(window).on('resize', resizeProjectPhoto);
+
   $(document).scroll(function(){
     var lastPageYOffset = 0;
     var $nav = $('nav');
@@ -32,5 +40,7 @@ jQuery(document).ready(function($) {
       });
     }
   });
+
+resizeProjectPhoto();
 
 });
