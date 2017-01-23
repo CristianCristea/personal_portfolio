@@ -86,11 +86,14 @@
 *** Single project - interactive video player
 ***********************************************************/
 .project-photo {
-  border: 40px solid palette(grey);
   margin-bottom: em(100px, 24px);
 
   img {
     margin-bottom: -4px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border: 40px solid palette(grey);
   }
 }
 

@@ -38,8 +38,5 @@ p {
 .online {
   @extend .headline-small;
   text-decoration: none;
-
-  &:hover {
-    color: $primary-color;
-  }
+  color: $primary-color;
 }
