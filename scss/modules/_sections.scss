@@ -93,7 +93,6 @@
   }
 }
 
-
 .headline-project--video-player {
   @include add-background-color($fire_bush);
 }
@@ -140,4 +139,16 @@
 
 .headline-project--notify {
   @include add-background-color($shamrock);
+}
+
+/***********************************************************
+*** Single project - mogo
+***********************************************************/
+
+.headline-project--mogo {
+  @include add-background-color($deep_blush );
+}
+
+img[src$='vertical-tabs-widget.jpg']{
+  height: 380px !important;
 }
