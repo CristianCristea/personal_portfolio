@@ -145,10 +145,6 @@
 *** Single project - mogo
 ***********************************************************/
 
-.headline-project--mogo {
+.headline-project--reen {
   @include add-background-color($deep_blush );
-}
-
-img[src$='vertical-tabs-widget.jpg']{
-  height: 380px !important;
 }
