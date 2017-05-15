@@ -6,31 +6,35 @@ nav {
     top: 0;
     background: $primary-color;
     width: 100%;
-    height:60px;
     z-index: 100;
 }
 
 .contact-nav {
   position: relative;
   text-align: center;
-  margin: 1em 1.25em 1.25em em(-50px);
+  margin: 0;
 
   @include element(link) {
     display: inline-block;
-    padding-left: em(30px);
+    padding: 10px 6px;
+    transition: all .3s;
+    cursor: pointer;
 
-    svg.social-link {
-      fill: $white;
-      margin-bottom: -5px;
-    }
-    &:last-of-type {
-      position: absolute;
-      top: -1px;
+    i {
+      color: #fff;
+      font-size: 24px;
     }
 
-    &:hover {
-    transform: scale(1.2) rotate(7deg);
-    transition: all .2s ease-in-out;
+    &:first-of-type:hover {
+      background-color: $gmail_color;
+    }
+
+    &:nth-of-type(2):hover {
+      background-color: $twitter_color;
+    }
+
+    &:last-of-type:hover {
+      background-color: $github_color;
     }
   }
 }
