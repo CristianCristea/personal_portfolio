@@ -2,8 +2,29 @@
 layout: default
 ---
 
+<!-- header -->
 <header>
   {% include main-nav.html %}
 </header>
-<p>test</p>
+
+<div class="container">
+  <!-- post thumbnails -->
+  <ul class="projects">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">
+          <figure>
+            <img src="{{site.url}}/{{post.thumbnail-url}}" alt="{{post.title}}">
+            <figcaption>
+              <h4>{{ post.title }}</h4>
+              <p>{{ post.work }}</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- footer -->
 {% include footer.html %}

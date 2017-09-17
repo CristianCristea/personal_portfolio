@@ -397,17 +397,25 @@ template {
   height: 1px;
   overflow: hidden; }
 
+body {
+  background-color: #fafafa; }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 .container {
   max-width: 1080px;
   margin: 0 auto; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-rendering: optimizeLegibility; }
 
 .main-nav {
   width: 100%;
@@ -553,5 +561,46 @@ footer {
   color: #fff;
   padding-top: 1em;
   width: 100%; }
+
+.projects li {
+  background-color: #fff;
+  padding: 1%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: block;
+  margin: 2.4%;
+  transition: all 0.3s;
+  text-align: left; }
+  .projects li:hover {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer; }
+  .projects li a {
+    text-decoration: none;
+    color: #333333; }
+.projects figure img {
+  max-width: 312px;
+  max-height: 184px; }
+.projects figcaption {
+  padding: 9px; }
+  .projects figcaption h4,
+  .projects figcaption p {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0; }
+  .projects figcaption h4 {
+    font-size: 1.2rem; }
+  .projects figcaption p {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    font-size: 0.9rem;
+    color: #666666;
+    padding-top: 0.4em;
+    height: 1.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 /*# sourceMappingURL=styles.css.map */
