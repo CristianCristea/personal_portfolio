@@ -551,6 +551,7 @@ footer {
   text-align: center;
   min-height: 60px;
   color: #fff;
-  padding-top: 1em; }
+  padding-top: 1em;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
