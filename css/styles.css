@@ -546,4 +546,11 @@ body {
         line-height: 2.8em;
         display: block; }
 
+footer {
+  background-color: #2098d1;
+  text-align: center;
+  min-height: 60px;
+  color: #fff;
+  padding-top: 1em; }
+
 /*# sourceMappingURL=styles.css.map */
