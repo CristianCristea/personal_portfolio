@@ -3,6 +3,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 5%;
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
@@ -67,7 +68,7 @@
       margin: 0;
       font-size: 16px;
       font-size: 0.9rem;
-      color: #666666;
+      color: $scorpion;
       padding-top: 0.4em;
       height: 1.3em;
       white-space: nowrap;

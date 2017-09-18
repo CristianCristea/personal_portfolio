@@ -416,7 +416,8 @@ img {
 
 body {
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
 
 .main-nav {
   width: 100%;
@@ -555,12 +556,41 @@ body {
         line-height: 2.8em;
         display: block; }
 
+.jumbotron {
+  margin-top: 160px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .jumbotron {
+      text-align: left; } }
+  .jumbotron h1 {
+    font-size: 72px;
+    color: #212121;
+    font-weight: 600;
+    margin-bottom: 30px; }
+  .jumbotron h2 {
+    font-size: 26px;
+    color: #5c5c5c;
+    display: inline-block;
+    clear: both;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 0; }
+  .jumbotron .separator {
+    background-color: #2098d1;
+    width: 100px;
+    height: 10px;
+    clear: both;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .jumbotron .separator {
+        margin: 0; } }
+
 footer {
   background-color: #2098d1;
   text-align: center;
-  min-height: 60px;
   color: #fff;
-  padding-top: 2.5em;
+  padding: 1em;
   width: 100%; }
   footer p {
     margin: 0; }
@@ -568,7 +598,8 @@ footer {
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 5%; }
   @media screen and (min-width: 768px) {
     .projects {
       justify-content: space-between; } }
@@ -590,7 +621,7 @@ footer {
       margin: 0 auto;
       max-width: 360px;
       text-decoration: none;
-      color: #333333; }
+      color: #212121; }
     @media screen and (min-width: 768px) {
       .projects li {
         max-width: 45%;
@@ -616,11 +647,14 @@ footer {
       margin: 0;
       font-size: 16px;
       font-size: 0.9rem;
-      color: #666666;
+      color: #5c5c5c;
       padding-top: 0.4em;
       height: 1.3em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+
+.blur {
+  opacity: 0.4; }
 
 /*# sourceMappingURL=styles.css.map */
