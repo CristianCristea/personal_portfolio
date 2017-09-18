@@ -410,6 +410,7 @@ img {
   height: auto; }
 
 .container {
+  width: 90%;
   max-width: 1080px;
   margin: 0 auto; }
 
@@ -559,48 +560,67 @@ footer {
   text-align: center;
   min-height: 60px;
   color: #fff;
-  padding-top: 1em;
+  padding-top: 2.5em;
   width: 100%; }
+  footer p {
+    margin: 0; }
 
-.projects li {
-  background-color: #fff;
-  padding: 1%;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  display: block;
-  margin: 2.4%;
-  transition: all 0.3s;
-  text-align: left; }
-  .projects li:hover {
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
-    cursor: pointer; }
-  .projects li a {
-    text-decoration: none;
-    color: #333333; }
-.projects figure img {
-  max-width: 312px;
-  max-height: 184px; }
-.projects figcaption {
-  padding: 9px; }
-  .projects figcaption h4,
-  .projects figcaption p {
-    text-align: left;
-    font-weight: 400;
-    line-height: 1.2;
-    margin: 0;
-    padding: 0; }
-  .projects figcaption h4 {
-    font-size: 1.2rem; }
-  .projects figcaption p {
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
+    .projects {
+      justify-content: space-between; } }
+  .projects li {
+    background-color: #fff;
+    padding: 1%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
     display: block;
-    margin: 0;
-    font-size: 16px;
-    font-size: 0.9rem;
-    color: #666666;
-    padding-top: 0.4em;
-    height: 1.3em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+    margin: 2.4%;
+    transition: all 0.3s;
+    text-align: left;
+    max-width: 90%; }
+    .projects li:hover {
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+      cursor: pointer; }
+    .projects li a {
+      display: block;
+      margin: 0 auto;
+      max-width: 360px;
+      text-decoration: none;
+      color: #333333; }
+    @media screen and (min-width: 768px) {
+      .projects li {
+        max-width: 45%;
+        margin: 2.4% 0; } }
+    @media screen and (min-width: 1024px) {
+      .projects li {
+        max-width: 30.3%; } }
+  .projects figure {
+    margin: 0; }
+  .projects figcaption {
+    padding: 9px; }
+    .projects figcaption h4,
+    .projects figcaption p {
+      text-align: left;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0; }
+    .projects figcaption h4 {
+      font-size: 1.2rem; }
+    .projects figcaption p {
+      display: block;
+      margin: 0;
+      font-size: 16px;
+      font-size: 0.9rem;
+      color: #666666;
+      padding-top: 0.4em;
+      height: 1.3em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
 
 /*# sourceMappingURL=styles.css.map */
