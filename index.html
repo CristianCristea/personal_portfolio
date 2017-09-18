@@ -5,11 +5,12 @@ layout: default
 <!-- header -->
 <header>
   {% include main-nav.html %}
+  {% include jumbotron.html %}
 </header>
 
 <div class="container">
   <!-- post thumbnails -->
-  <ul class="projects">
+  <ul class="projects" id="projects">
     {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}">
