@@ -654,6 +654,53 @@ footer {
       overflow: hidden;
       text-overflow: ellipsis; }
 
+.post-content .title-bar {
+  margin-top: 100px; }
+.post-content .project-details {
+  margin-top: 50px; }
+  .post-content .project-details .project-link {
+    margin: 20px 0; }
+.post-content .project-img {
+  display: block;
+  margin: 0 auto 20px; }
+
+.title-bar {
+  width: 100%;
+  text-align: left;
+  background-color: tomato; }
+  .title-bar h3 {
+    color: #fff;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0; }
+
+.project-details .project-details__item {
+  color: #212121;
+  margin-bottom: 30px; }
+.project-details h4 {
+  color: #5c5c5c;
+  font-weight: 600;
+  margin-bottom: -5px; }
+.project-details .project-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  background-color: #2098d1;
+  padding: 10px;
+  border: 2px solid #2098d1;
+  transition: all 0.3; }
+  .project-details .project-link:hover {
+    color: #2098d1;
+    background-color: #fff; }
+
+.project-overview h4 {
+  color: #5c5c5c;
+  font-weight: 600;
+  margin-bottom: -5px; }
+
 .blur {
   opacity: 0.4; }
 
