@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Contact Manager"
 date:   2017-09-17 16:58:23 +0200
 categories: projects
@@ -7,7 +7,48 @@ thumbnail-url: "assets/contact-manager-thumbnail.jpg"
 work: "App Design and Development"
 ---
 
+<header>
+  {% include main-nav.html %}
+  {% include jumbotron.html %}
+</header>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt possimus qui dolor vel consectetur, accusamus labore consequuntur obcaecati repellendus accusantium eius similique assumenda ullam enim mollitia dolorum sequi quidem dicta.</p>
-<img src="{{ site.url }}/{{page.thumbnail-url}}" alt="">
-<p>{{page.title}}</p>
+<main>
+  <div class="title-bar">
+    <div class="container">
+      <h3>{{ page.title }}</h3>
+    </div>
+  </div>
+
+  <div class="container project">
+    <div class="project-details">
+      <div class="project-details__item">
+        <h4>Technology</h4>
+        <p>HTML5</p>
+        <p>Sass</p>
+        <p>jQuery</p>
+        <p>Web Storage API</p>
+        <p>Handlebars.js</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4 class="headline-small">Date</h4>
+        <p>1 Mai 2017</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4><a href="../onlineProjects/project8-contact_manager/" class="project-link">See the project online</a></h4>
+      </div>
+    </div>
+
+    <div class="project-overview">
+      <h4>Project Overview</h4>
+      <p>
+        In this project, you will create an interactive Contact Manager using JavaScript, jQuery, Web Storage API. Manage contacts. Add, edit, delete, search and store the contacts using the Web Storage API.
+      </p>
+    </div>
+
+    <img class="project-img" src="{{ site.url }}/{{ page.thumbnail-url }}" alt="{{page.title}} project">
+  </div>
+</main>
+
+{% include footer.html %}
