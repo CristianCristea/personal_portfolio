@@ -4,8 +4,6 @@
   }
 
   .project-details {
-    margin-top: 50px;
-
     .project-link {
       margin: 20px 0;
     }
@@ -13,7 +11,7 @@
 
   .project-img {
     display: block;
-    margin: 0 auto 20px;
+    margin: 100px auto 50px;
   }
 }
 
@@ -32,7 +30,15 @@
   }
 }
 
+.project {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .project-details {
+  width: 40%;
+
   .project-details__item {
     color: $black;
     margin-bottom: 30px;
@@ -62,11 +68,11 @@
 }
 
 .project-overview {
+  width: 40%;
+
   h4 {
     color: $scorpion;
     font-weight: 600;
     margin-bottom: -5px;
-  }
-  p {
   }
 }

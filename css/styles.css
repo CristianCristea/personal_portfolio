@@ -599,7 +599,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 5%; }
+  margin-top: 7.5%; }
   @media screen and (min-width: 768px) {
     .projects {
       justify-content: space-between; } }
@@ -656,13 +656,11 @@ footer {
 
 .post-content .title-bar {
   margin-top: 100px; }
-.post-content .project-details {
-  margin-top: 50px; }
-  .post-content .project-details .project-link {
-    margin: 20px 0; }
+.post-content .project-details .project-link {
+  margin: 20px 0; }
 .post-content .project-img {
   display: block;
-  margin: 0 auto 20px; }
+  margin: 100px auto 50px; }
 
 .title-bar {
   width: 100%;
@@ -676,30 +674,39 @@ footer {
     font-size: 2em;
     margin: 0; }
 
-.project-details .project-details__item {
-  color: #212121;
-  margin-bottom: 30px; }
-.project-details h4 {
-  color: #5c5c5c;
-  font-weight: 600;
-  margin-bottom: -5px; }
-.project-details .project-link {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 300;
-  color: #fff;
-  background-color: #2098d1;
-  padding: 10px;
-  border: 2px solid #2098d1;
-  transition: all 0.3; }
-  .project-details .project-link:hover {
-    color: #2098d1;
-    background-color: #fff; }
+.project {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between; }
 
-.project-overview h4 {
-  color: #5c5c5c;
-  font-weight: 600;
-  margin-bottom: -5px; }
+.project-details {
+  width: 40%; }
+  .project-details .project-details__item {
+    color: #212121;
+    margin-bottom: 30px; }
+  .project-details h4 {
+    color: #5c5c5c;
+    font-weight: 600;
+    margin-bottom: -5px; }
+  .project-details .project-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    color: #fff;
+    background-color: #2098d1;
+    padding: 10px;
+    border: 2px solid #2098d1;
+    transition: all 0.3; }
+    .project-details .project-link:hover {
+      color: #2098d1;
+      background-color: #fff; }
+
+.project-overview {
+  width: 40%; }
+  .project-overview h4 {
+    color: #5c5c5c;
+    font-weight: 600;
+    margin-bottom: -5px; }
 
 .blur {
   opacity: 0.4; }
