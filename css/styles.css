@@ -400,6 +400,9 @@ template {
 body {
   background-color: #fafafa; }
 
+main {
+  margin-top: 5% !important; }
+
 ul {
   margin: 0;
   padding: 0;
@@ -566,14 +569,14 @@ body {
     font-size: 72px;
     color: #212121;
     font-weight: 600;
-    margin-bottom: 30px; }
+    margin-bottom: 24px; }
   .jumbotron h2 {
     font-size: 26px;
     color: #5c5c5c;
     display: inline-block;
     clear: both;
     font-weight: 300;
-    margin-top: 30px;
+    margin-top: 24px;
     margin-bottom: 0; }
   .jumbotron .separator {
     background-color: #2098d1;
@@ -591,15 +594,15 @@ footer {
   text-align: center;
   color: #fff;
   padding: 1em;
-  width: 100%; }
+  width: 100%;
+  margin-top: 2.4%; }
   footer p {
     margin: 0; }
 
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  margin-top: 7.5%; }
+  justify-content: center; }
   @media screen and (min-width: 768px) {
     .projects {
       justify-content: space-between; } }
@@ -707,6 +710,17 @@ footer {
     color: #5c5c5c;
     font-weight: 600;
     margin-bottom: -5px; }
+
+.skills {
+  margin-top: 5%; }
+  .skills h2 {
+    font-size: 26px;
+    color: #5c5c5c;
+    display: inline-block;
+    clear: both;
+    font-weight: 300;
+    margin-top: 24px;
+    margin-bottom: 0; }
 
 .blur {
   opacity: 0.4; }
