@@ -3,3 +3,39 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
+.skill.html {
+  li:before,
+  h2 {
+    color: $html;
+  }
+}
+
+.skill.css {
+  li:before,
+  h2 {
+    color: $css;
+  }
+}
+
+.skill.js {
+  li:before,
+  h2 {
+    color: $js;
+  }
+}
+
+.project-list {
+  list-style: none;
+  margin-top: 10px;
+
+  li {
+    margin-top: 5px;
+
+    &:before {
+      font-family: FontAwesome;
+      content: "\f058";
+      padding-right: 5px;
+    }
+  }
+}

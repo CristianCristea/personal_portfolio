@@ -422,6 +422,28 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
+.skill.html li:before,
+.skill.html h2 {
+  color: #f16529; }
+
+.skill.css li:before,
+.skill.css h2 {
+  color: #369dd7; }
+
+.skill.js li:before,
+.skill.js h2 {
+  color: #f7df1e; }
+
+.project-list {
+  list-style: none;
+  margin-top: 10px; }
+  .project-list li {
+    margin-top: 5px; }
+    .project-list li:before {
+      font-family: FontAwesome;
+      content: "\f058";
+      padding-right: 5px; }
+
 .main-nav {
   width: 100%;
   background-color: #2098d1;
@@ -721,6 +743,14 @@ footer {
     font-weight: 300;
     margin-top: 24px;
     margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    .skills .wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; } }
+  @media screen and (min-width: 768px) {
+    .skills .skill {
+      width: 30%; } }
 
 .blur {
   opacity: 0.4; }
