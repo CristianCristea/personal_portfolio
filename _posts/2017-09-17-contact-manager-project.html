@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Contact Manager"
+title: "Cristian Cristea"
+subtitle: "Front End Web Developer"
+project:  "Contact Manager"
 date:   2017-09-17 16:58:23 +0200
 categories: projects
 thumbnail-url: "assets/contact-manager-thumbnail.jpg"
@@ -9,13 +11,13 @@ work: "App Design and Development"
 
 <header>
   {% include navbar.html %}
-  {% include jumbotron.html %}
+    {% include jumbotron.html title=page.title subtitle=page.subtitle %}
 </header>
 
 <main>
   <div class="title-bar">
     <div class="container">
-      <h3>{{ page.title }}</h3>
+      <h3>{{ page.project }}</h3>
     </div>
   </div>
 
