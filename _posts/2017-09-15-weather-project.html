@@ -1,13 +1,57 @@
 ---
 layout: post
-title:  "Current Weather"
-date:   2017-09-15 16:58:23 +0200
+title: "Cristian Cristea"
+subtitle: "Front End Web Developer"
+project:  "Current Weather"
+date:   2016-02-01 16:58:23 +0200
 categories: projects
 thumbnail-url: "assets/current-weather-thumbnail.jpg"
-work: App Design and Front End Development
+work: "Website Design and Development"
 ---
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt possimus qui dolor vel consectetur, accusamus labore consequuntur obcaecati repellendus accusantium eius similique assumenda ullam enim mollitia dolorum sequi quidem dicta.</p>
-<img src="{{ site.url }}/{{page.thumbnail-url}}" alt="">
-<p>{{page.title}}</p>
+<header>
+  {% include navbar.html %}
+    {% include jumbotron.html title=page.title subtitle=page.subtitle %}
+</header>
+
+<main>
+  <div class="title-bar weather">
+    <div class="container">
+      <h3>{{ page.project }}</h3>
+    </div>
+  </div>
+
+  <div class="container project">
+    <div class="project-details">
+      <div class="project-details__item">
+        <h4>Technology</h4>
+        <p>HTML5</p>
+        <p>Sass</p>
+        <p>jQuery</p>
+        <p>OpenWeatherMap API</p>
+        <p>Handlebars.js</p>
+        <p>Typeahead.js</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4 class="headline-small">Date</h4>
+        <p>1 Mai 2017</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4><a href="https://cristiancristea.github.io/weather_app/" class="project-link">See the project online</a></h4>
+      </div>
+    </div>
+
+    <div class="project-overview">
+      <h4>Project Overview</h4>
+      <p>Build a website to display current weather using JavaScript and the Openweathermap API.</p>
+      <p>Retrive information about temperature (Celsius degrees), date and humidity.</p>
+    </div>
+  </div>
+
+  <img class="project-img" src="{{ site.url }}/{{ page.thumbnail-url }}" alt="{{page.title}} project">
+</main>
+
+{% include footer.html %}
