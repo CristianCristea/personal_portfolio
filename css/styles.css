@@ -397,6 +397,15 @@ template {
   height: 1px;
   overflow: hidden; }
 
+.contact-manager {
+  background-color: tomato; }
+
+.reen {
+  background-color: #37516c; }
+
+.weather {
+  background-color: #035273; }
+
 body {
   background-color: #fafafa; }
 
@@ -690,8 +699,7 @@ footer {
 
 .title-bar {
   width: 100%;
-  text-align: left;
-  background-color: tomato; }
+  text-align: left; }
   .title-bar h3 {
     color: #fff;
     padding-top: 1.25em;
