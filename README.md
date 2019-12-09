@@ -1,2 +1,3 @@
-# Cristian Cristea - Front-End Web Developer
+# Cristian Cristea - Web Developer
+
 ## Personal Portfolio Website
