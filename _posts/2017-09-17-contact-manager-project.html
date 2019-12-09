@@ -2,16 +2,16 @@
 layout: post
 title: "Cristian Cristea"
 subtitle: "Front End Web Developer"
-project:  "Contact Manager"
-date:   2017-09-17 16:58:23 +0200
+project: "Contact Manager"
+date: 2017-09-17 16:58:23 +0200
 categories: projects
 thumbnail-url: "assets/contact-manager-thumbnail.jpg"
 work: "App Design and Development"
 ---
 
 <header>
-  {% include navbar.html %}
-    {% include jumbotron.html title=page.title subtitle=page.subtitle %}
+  {% include navbar.html %} {% include jumbotron.html title=page.title
+  subtitle=page.subtitle %}
 </header>
 
 <main>
@@ -25,14 +25,14 @@ work: "App Design and Development"
     <div class="project-details">
       <div class="project-details__item">
         <h4>Technology</h4>
-        <h4>v0.1</h4>
+        <h4>v1.0</h4>
         <p>HTML5</p>
         <p>Sass</p>
         <p>jQuery</p>
         <p>Web Storage API - localStorage</p>
         <p>Handlebars.js</p>
-        <br/>
-        <h4>v1.0</h4>
+        <br />
+        <h4>v2.0</h4>
         <p>HTML5</p>
         <p>Sass</p>
         <p>Reactjs</p>
@@ -41,23 +41,42 @@ work: "App Design and Development"
 
       <div class="project-details__item">
         <h4 class="headline-small">Date</h4>
-        <p>1 Mai 2017</p>
+        <p>17 Sep 2017</p>
       </div>
 
       <div class="project-details__item">
-        <h4><a href="https://cristiancristea.github.io/contact-manager-reactjs/" class="project-link">See the project online</a></h4>
+        <h4>
+          <a
+            href="https://cristiancristea.github.io/contact_manager_jquery"
+            target="_blank"
+            class="project-link"
+            >See the project online</a
+          >
+          <a
+            href="https://github.com/CristianCristea/contact_manager_jquery"
+            target="_blank"
+            class="project-link-github"
+            >Github repo</a
+          >
+        </h4>
       </div>
     </div>
 
     <div class="project-overview">
       <h4>Project Overview</h4>
       <p>
-        In this project, you will create an interactive Contact Manager using JavaScript, Web Storage API. Manage contacts. Add, edit, delete, search and store the contacts using the Web Storage API.
+        An interactive Contact Manager using JavaScript, Web Storage API. Manage
+        contacts. Add, edit, delete, search and store the contacts using the Web
+        Storage API.
       </p>
     </div>
   </div>
 
-  <img class="project-img" src="{{ site.url }}/{{ page.thumbnail-url }}" alt="{{page.title}} project">
+  <img
+    class="project-img"
+    src="{{ site.url }}/{{ page.thumbnail-url }}"
+    alt="{{page.title}} project"
+  />
 </main>
 
 {% include footer.html %}

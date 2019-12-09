@@ -2,17 +2,16 @@
 layout: post
 title: "Cristian Cristea"
 subtitle: "Front End Web Developer"
-project:  "Current Weather"
-date:   2016-02-01 16:58:23 +0200
+project: "Current Weather"
+date: 2017-09-27 16:58:23 +0200
 categories: projects
 thumbnail-url: "assets/current-weather-thumbnail.jpg"
 work: "Website Design and Development"
 ---
 
-
 <header>
-  {% include navbar.html %}
-    {% include jumbotron.html title=page.title subtitle=page.subtitle %}
+  {% include navbar.html %} {% include jumbotron.html title=page.title
+  subtitle=page.subtitle %}
 </header>
 
 <main>
@@ -40,18 +39,41 @@ work: "Website Design and Development"
       </div>
 
       <div class="project-details__item">
-        <h4><a href="https://cristiancristea.github.io/weather_app/" class="project-link">See the project online</a></h4>
+        <h4>
+          <a
+            href="https://cristiancristea.github.io/weather_app/"
+            target="_blank"
+            class="project-link"
+            >See the project online</a
+          >
+          <a
+            href="https://github.com/CristianCristea/weather_app"
+            target="_blank"
+            class="project-link-github"
+            >Github repo</a
+          >
+        </h4>
       </div>
     </div>
 
     <div class="project-overview">
       <h4>Project Overview</h4>
-      <p>Build a website to display current weather using JavaScript and the Openweathermap API.</p>
-      <p>Retrive information about temperature (Celsius degrees), date and humidity.</p>
+      <p>
+        Display the weather conditions at a particular location using JavaScript
+        and the Openweathermap API.
+      </p>
+      <p>
+        Retrive information about temperature (Celsius degrees), date and
+        humidity.
+      </p>
     </div>
   </div>
 
-  <img class="project-img" src="{{ site.url }}/{{ page.thumbnail-url }}" alt="{{page.title}} project">
+  <img
+    class="project-img"
+    src="{{ site.url }}/{{ page.thumbnail-url }}"
+    alt="{{page.title}} project"
+  />
 </main>
 
 {% include footer.html %}

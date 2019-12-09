@@ -1,13 +1,72 @@
 ---
 layout: post
-title:  "Interactive Video Player"
-date:   2017-09-16 16:58:23 +0200
+title: "Cristian Cristea"
+subtitle: "Front End Web Developer"
+project: "Interactive Video Player"
+date: 2016-10-26 16:58:23 +0200
 categories: projects
 thumbnail-url: "assets/interactive-video-player-thumbnail.jpg"
-work: "Front End Development"
+work: "Website Design and Development"
 ---
 
+<header>
+  {% include navbar.html %} {% include jumbotron.html title=page.title
+  subtitle=page.subtitle %}
+</header>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt possimus qui dolor vel consectetur, accusamus labore consequuntur obcaecati repellendus accusantium eius similique assumenda ullam enim mollitia dolorum sequi quidem dicta.</p>
-<img src="{{ site.url }}/{{page.thumbnail-url}}" alt="">
-<p>{{page.title}}</p>
+<main>
+  <div class="title-bar interactive-video-player">
+    <div class="container">
+      <h3>{{ page.project }}</h3>
+    </div>
+  </div>
+
+  <div class="container project">
+    <div class="project-details">
+      <div class="project-details__item">
+        <h4>Technology</h4>
+        <h4>v1.0</h4>
+        <p>HTML5 Video</p>
+        <p>Sass</p>
+        <p>jQuery</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4 class="headline-small">Date</h4>
+        <p>26 Oct 2017</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4>
+          <a
+            href="https://cristiancristea.github.io/interactive-video-player/"
+            target="_blank"
+            class="project-link"
+            >See the project online</a
+          >
+          <a
+            href="https://github.com/CristianCristea/interactive-video-player"
+            target="_blank"
+            class="project-link-github"
+            >Github repo</a
+          >
+        </h4>
+      </div>
+    </div>
+
+    <div class="project-overview">
+      <h4>Project Overview</h4>
+      <p>
+        An interactive video player using the HTML Video element.
+      </p>
+    </div>
+  </div>
+
+  <img
+    class="project-img"
+    src="{{ site.url }}/{{ page.thumbnail-url }}"
+    alt="{{page.title}} project"
+  />
+</main>
+
+{% include footer.html %}
