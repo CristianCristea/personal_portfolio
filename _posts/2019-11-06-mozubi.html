@@ -1,0 +1,85 @@
+---
+layout: post
+title: "Cristian Cristea"
+subtitle: "Web Developer"
+project: "Mozubi"
+date: 2019-11-06 18:00:00 +0200
+categories: projects
+thumbnail-url: "assets/mozubi-small-thumbnail.jpg"
+full-img-url: "assets/mozubi-full-img.jpg"
+mozubi-quiz-img-url: "assets/mozubi-quiz-img.jpg"
+work: "Landing page, PostgreSQL, Back End Development, Quiz design and functionality"
+---
+
+<header>
+  {% include navbar.html %} {% include jumbotron.html title=page.title
+  subtitle=page.subtitle %}
+</header>
+
+<main>
+  <div class="title-bar mozubi">
+    <div class="container">
+      <h3>{{ page.project }}</h3>
+    </div>
+  </div>
+
+  <div class="container project">
+    <div class="project-details">
+      <div class="project-details__item">
+        <h4>Technology</h4>
+        <p>Ruby on Rails 5.2</p>
+        <p>HTML5</p>
+        <p>Sass</p>
+        <p>JavaScript</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4 class="headline-small">Date</h4>
+        <p>6 Dec 2019</p>
+      </div>
+
+      <div class="project-details__item">
+        <h4>
+          <a href="https://www.mozubi.app" target="_blank" class="project-link"
+            >See the project online</a
+          >
+          <a
+            href="https://github.com/CristianCristea/mozubi"
+            target="_blank"
+            class="project-link-github"
+            >Github repo</a
+          >
+        </h4>
+      </div>
+    </div>
+
+    <div class="project-overview">
+      <h4>Project Overview</h4>
+      <p>
+        Develop a learning platform for german apprentices that will replace the
+        outdated exam preparation material.
+      </p>
+      <p>
+        The learning platform has a sequential syllabus with topics and articles
+        to be read and a quiz(multiple choice) for every article.
+      </p>
+      <p>
+        The project had a team of 4 developers, I developed the landing page,
+        the backend (RoR models, PostgreSQL) and the quiz.
+      </p>
+    </div>
+  </div>
+
+  <img
+    class="project-img"
+    src="{{ site.url }}/{{ page.full-img-url }}"
+    alt="{{page.title}} project"
+  />
+  <img
+    class="project-img"
+    src="{{ site.url }}/{{ page.mozubi-quiz-img-url }}"
+    alt="{{page.title}} project"
+  />
+</main>
+
+{% include footer.html %}
