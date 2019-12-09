@@ -400,11 +400,14 @@ template {
 .contact-manager {
   background-color: tomato; }
 
-.reen {
-  background-color: #37516c; }
-
 .weather {
   background-color: #035273; }
+
+.interactive-video-player {
+  background-color: #e59440; }
+
+.mozubi {
+  background-color: #5432ff; }
 
 body {
   background-color: #fafafa; }
@@ -722,7 +725,8 @@ footer {
     color: #5c5c5c;
     font-weight: 600;
     margin-bottom: -5px; }
-  .project-details .project-link {
+  .project-details .project-link,
+  .project-details .project-link-github {
     display: inline-block;
     text-decoration: none;
     font-weight: 300;
@@ -730,9 +734,16 @@ footer {
     background-color: #2098d1;
     padding: 10px;
     border: 2px solid #2098d1;
-    transition: all 0.3; }
-    .project-details .project-link:hover {
+    transition: all 0.4; }
+    .project-details .project-link:hover,
+    .project-details .project-link-github:hover {
       color: #2098d1;
+      background-color: #fff; }
+  .project-details .project-link-github {
+    background-color: #6f42c1;
+    border: 2px solid #6f42c1; }
+    .project-details .project-link-github:hover {
+      color: #6f42c1;
       background-color: #fff; }
 
 .project-overview {
