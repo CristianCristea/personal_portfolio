@@ -1,30 +1,30 @@
 ---
 layout: default
 title: "Cristian Cristea"
-subtitle: "Front End Web Developer"
+subtitle: "Full Stack Web Developer"
 ---
 
 <!-- header -->
 <header>
-  {% include navbar.html %}
-  {% include jumbotron.html title=page.title subtitle=page.subtitle %}
+  {% include navbar.html %} {% include jumbotron.html title=page.title
+  subtitle=page.subtitle %}
 </header>
 
 <main class="container">
   <!-- post thumbnails -->
   <ul class="projects" id="projects">
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">
-          <figure>
-            <img src="{{site.url}}/{{post.thumbnail-url}}" alt="{{post.title}}">
-            <figcaption>
-              <h4>{{ post.project }}</h4>
-              <p>{{ post.work }}</p>
-            </figcaption>
-          </figure>
-        </a>
-      </li>
+    <li>
+      <a href="{{ post.url }}">
+        <figure>
+          <img src="{{site.url}}/{{post.thumbnail-url}}" alt="{{post.title}}" />
+          <figcaption>
+            <h4>{{ post.project }}</h4>
+            <p>{{ post.work }}</p>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </main>
