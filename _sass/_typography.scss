@@ -4,6 +4,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .text-html {
   color: $html;
 }

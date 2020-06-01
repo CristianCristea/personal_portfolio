@@ -407,7 +407,7 @@ template {
   background-color: #e59440; }
 
 .mozubi {
-  background-color: #5432ff; }
+  background-color: #3dd598; }
 
 body {
   background-color: #fafafa; }
@@ -433,6 +433,9 @@ body {
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
+
+p {
+  line-height: 1.6; }
 
 .text-html {
   color: #f16529; }
