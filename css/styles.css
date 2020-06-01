@@ -434,17 +434,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
-.skill.html li:before,
-.skill.html h2 {
+.text-html {
   color: #f16529; }
 
-.skill.css li:before,
-.skill.css h2 {
+.text-css {
   color: #369dd7; }
 
-.skill.js li:before,
-.skill.js h2 {
-  color: #f7df1e; }
+.text-js {
+  color: #f1cc03; }
 
 .project-list {
   list-style: none;
@@ -752,9 +749,23 @@ footer {
     font-weight: 600;
     margin-bottom: -5px; }
 
-.skills {
-  margin-top: 5%; }
-  .skills h2 {
+.about-me {
+  margin-top: 10%; }
+  @media screen and (min-width: 768px) {
+    .about-me {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%; }
+      .about-me .about-me-photo {
+        width: 100%;
+        max-width: 200px;
+        height: auto; }
+      .about-me .about-me-description {
+        max-width: 600px;
+        margin-left: 3rem;
+        flex: 2; } }
+  .about-me h2 {
     font-size: 26px;
     color: #5c5c5c;
     display: inline-block;
@@ -762,21 +773,6 @@ footer {
     font-weight: 300;
     margin-bottom: 0;
     margin-top: 0; }
-  @media screen and (min-width: 768px) {
-    .skills .wrapper {
-      display: flex;
-      justify-content: space-between;
-      width: 100%; } }
-  .skills .skill {
-    margin-top: 30px; }
-    @media screen and (min-width: 768px) {
-      .skills .skill {
-        width: 36%; }
-        .skills .skill:first-of-type {
-          width: 24%; } }
-    @media screen and (min-width: 1200px) {
-      .skills .skill {
-        width: 33%; } }
 
 .blur {
   opacity: 0.4; }

@@ -4,25 +4,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.skill.html {
-  li:before,
-  h2 {
-    color: $html;
-  }
+.text-html {
+  color: $html;
 }
 
-.skill.css {
-  li:before,
-  h2 {
-    color: $css;
-  }
+.text-css {
+  color: $css;
 }
 
-.skill.js {
-  li:before,
-  h2 {
-    color: $js;
-  }
+.text-js {
+  color: $js;
 }
 
 .project-list {
