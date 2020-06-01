@@ -4,7 +4,8 @@
 
 ## Dev server
 
-bundle exec jekyll serve
+- bundle exec jekyll serve
+- sass --watch \_sass:css
 
 ## Manual Deployment
 
